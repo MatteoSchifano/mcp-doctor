@@ -1,7 +1,7 @@
 {
-  "name": "mcp-doctor",
+  "name": "mcp-doctor-cli",
   "version": "0.3.0",
-  "description": "Diagnostica per server MCP: punti un endpoint, ti dice cosa è rotto e come si aggiusta.",
+  "description": "Point it at an MCP endpoint. It tells you what's broken and how to fix it. One command, clean exit codes, nothing to install.",
   "type": "module",
   "license": "MIT",
   "author": "Matteo Schifano",

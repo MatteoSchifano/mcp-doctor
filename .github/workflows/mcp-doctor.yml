@@ -20,12 +20,12 @@ jobs:
           node-version: 20
 
       - name: mcp-doctor check
-        run: npx mcp-doctor check "${{ inputs.url }}" --strict
+        run: npx mcp-doctor-cli check "${{ inputs.url }}" --strict
         env:
           MCP_DOCTOR_TOKEN: ${{ secrets.MCP_TOKEN }}
 
       - name: 2026-07-28 readiness
         continue-on-error: true
-        run: npx mcp-doctor migrate "${{ inputs.url }}"
+        run: npx mcp-doctor-cli migrate "${{ inputs.url }}"
         env:
           MCP_DOCTOR_TOKEN: ${{ secrets.MCP_TOKEN }}

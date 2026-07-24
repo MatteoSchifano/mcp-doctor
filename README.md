@@ -3,8 +3,10 @@
 **Point it at an MCP endpoint. It tells you what's broken and how to fix it.** One command, clean exit codes, nothing to install.
 
 ```bash
-npx mcp-doctor https://mcp.example.com/mcp
+npx mcp-doctor-cli https://mcp.example.com/mcp
 ```
+
+> The npm package is **`mcp-doctor-cli`** — the plain `mcp-doctor` name belongs to an unrelated tool that diagnoses *client* configuration. The command it installs is `mcp-doctor`.
 
 ---
 
@@ -176,7 +178,7 @@ The quality checks ("description too short") are **opinion, not spec**. They are
 
 ```yaml
 - name: Validate the freshly deployed MCP server
-  run: npx mcp-doctor check ${{ env.MCP_URL }} --json --strict
+  run: npx mcp-doctor-cli check ${{ env.MCP_URL }} --json --strict
   env:
     MCP_DOCTOR_TOKEN: ${{ secrets.MCP_TOKEN }}
 ```
