@@ -1,0 +1,97 @@
+package-lock.json
+  s_ae800d6eef39c6::t_0f9ea6a2b61bb6 1-54
+src/commands/check.ts
+  s_ae800d6eef39c6::t_105f0edc66f4de 1-59
+src/commands/watch.ts
+  s_ae800d6eef39c6::t_f9c0c9879c8bc4 1-58
+src/report/human.ts
+  s_ae800d6eef39c6::t_e2b171f9c4fda7 1-85
+src/report/json.ts
+  s_ae800d6eef39c6::t_63e4caaa946818 1-32
+src/transport/stdio.ts
+  s_ae800d6eef39c6::t_197d761ee72173 1-163
+src/util/color.ts
+  s_ae800d6eef39c6::t_61eab37c5632ff 1-28
+test/fixtures/http-fixture.ts
+  s_ae800d6eef39c6::t_ef99fe576896b2 1-239
+test/fixtures/stdio-clean.js
+  s_ae800d6eef39c6::t_58fb81c2491465 1-44
+test/fixtures/stdio-crash.js
+  s_ae800d6eef39c6::t_f010259396f3bb 1-6
+test/fixtures/stdio-noisy.js
+  s_ae800d6eef39c6::t_c674e3042d5ac6 1-47
+.github/workflows/ci.yml
+  s_ae800d6eef39c6::t_f8fd986f6eb88f 1-24
+.github/workflows/mcp-doctor.yml
+  s_ae800d6eef39c6::t_18a6b567f9f901 1-31
+.gitignore
+  s_ae800d6eef39c6::t_a0c43549adffa7 1-6
+LICENSE
+  s_ae800d6eef39c6::t_67159a4566b2b2 1-21
+README.md
+  s_ae800d6eef39c6::t_8511d78b37cd3d 1-234
+package.json
+  s_ae800d6eef39c6::t_0ed036df82b6d5 1-51
+src/checks/auth.ts
+  s_ae800d6eef39c6::t_0844d4c906b02d 1-206
+src/checks/cache.ts
+  s_ae800d6eef39c6::t_3c6fb2caff3bc9 1-37
+src/checks/helpers.ts
+  s_ae800d6eef39c6::t_bf8b3a7bfe233f 1-25
+src/checks/index.ts
+  s_ae800d6eef39c6::t_add0bb4848bbee 1-87
+src/checks/protocol.ts
+  s_ae800d6eef39c6::t_b3aa97e036e3ec 1-231
+src/checks/stdio.ts
+  s_ae800d6eef39c6::t_206fd4abc0a944 1-74
+src/checks/tools.ts
+  s_ae800d6eef39c6::t_1bc778095d8fd9 1-234
+src/checks/transport.ts
+  s_ae800d6eef39c6::t_9311ae0659e841 1-194
+src/cli.ts
+  s_ae800d6eef39c6::t_fe0846535fff9f 1-262
+src/commands/migrate.ts
+  s_ae800d6eef39c6::t_38c00dc87c3160 1-196
+src/config.ts
+  s_ae800d6eef39c6::t_b4f5ffe1f7d3d8 1-56
+src/index.ts
+  s_ae800d6eef39c6::t_f5152bbd320d8f 1-26
+src/probe/http-probe.ts
+  s_ae800d6eef39c6::t_806a75e593fe56 1-445
+src/probe/stdio-probe.ts
+  s_ae800d6eef39c6::t_a324f25cf39bf7 1-125
+src/protocol.ts
+  s_ae800d6eef39c6::t_90b34d8785fad6 1-97
+src/transport/http.ts
+  s_ae800d6eef39c6::t_cb1f4acd2215d8 1-254
+src/types.ts
+  s_ae800d6eef39c6::t_9298a7b1acbdeb 1-176
+src/util/redact.ts
+  s_ae800d6eef39c6::t_a882e0c069684b 1-49
+test/checks.test.ts
+  s_ae800d6eef39c6::t_e71d3876226c41 1-267
+test/cli.test.ts
+  s_ae800d6eef39c6::t_cbcf4eec63a00a 1-113
+test/http.test.ts
+  s_ae800d6eef39c6::t_9812def3e2c9bc 1-144
+test/stdio.test.ts
+  s_ae800d6eef39c6::t_801799f8d982d3 1-50
+tsconfig.json
+  s_ae800d6eef39c6::t_916d7207293a8a 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "cd3bfae258c45c60d77634e8ba988a34b0cbe4a0",
+  "prompts": {},
+  "sessions": {
+    "s_ae800d6eef39c6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "be2529f6-ed3a-4ad9-9221-e2271a3760b0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "MatteoSchifano <matvinsch@gmail.com>"
+    }
+  }
+}
