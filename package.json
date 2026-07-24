@@ -1,0 +1,51 @@
+{
+  "name": "mcp-doctor",
+  "version": "0.3.0",
+  "description": "Diagnostica per server MCP: punti un endpoint, ti dice cosa è rotto e come si aggiusta.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Matteo Schifano",
+  "bin": {
+    "mcp-doctor": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./checks": "./dist/checks/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.ts",
+    "start": "node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "diagnostics",
+    "cli",
+    "lint",
+    "doctor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatteoSchifano/mcp-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatteoSchifano/mcp-doctor/issues"
+  },
+  "homepage": "https://github.com/MatteoSchifano/mcp-doctor#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

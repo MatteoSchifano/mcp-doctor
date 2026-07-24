@@ -1,0 +1,31 @@
+name: Validate MCP server
+
+# A ready-to-use example: drop this file into your own MCP server repo and
+# point MCP_URL at your deployment. It fails the build when the server is not
+# in a diagnosable state.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: URL of the MCP endpoint to check
+        required: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: mcp-doctor check
+        run: npx mcp-doctor check "${{ inputs.url }}" --strict
+        env:
+          MCP_DOCTOR_TOKEN: ${{ secrets.MCP_TOKEN }}
+
+      - name: 2026-07-28 readiness
+        continue-on-error: true
+        run: npx mcp-doctor migrate "${{ inputs.url }}"
+        env:
+          MCP_DOCTOR_TOKEN: ${{ secrets.MCP_TOKEN }}
