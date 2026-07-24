@@ -1,0 +1,25 @@
+README.md
+  s_ae800d6eef39c6::t_ac2060caf3de07 9-10
+  s_ae800d6eef39c6::t_a6f0dbffa89305 6,181
+package.json
+  s_ae800d6eef39c6::t_a6f0dbffa89305 4
+  s_ae800d6eef39c6::t_15b04ce5668589 2
+.github/workflows/mcp-doctor.yml
+  s_ae800d6eef39c6::t_a6f0dbffa89305 23,29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "62eaa2239092daadf8382cfb11927cb4efce657e",
+  "prompts": {},
+  "sessions": {
+    "s_ae800d6eef39c6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "be2529f6-ed3a-4ad9-9221-e2271a3760b0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "MatteoSchifano <matvinsch@gmail.com>"
+    }
+  }
+}
